@@ -1,0 +1,91 @@
+{
+  "uri": "/v3/releases/puppetlabs-nginx-99.99.99",
+  "slug": "puppetlabs-nginx-99.99.99",
+  "module": {
+    "uri": "/v3/modules/puppetlabs-nginx",
+    "slug": "puppetlabs-nginx",
+    "name": "nginx",
+    "owner": {
+      "uri": "/v3/users/puppetlabs",
+      "slug": "puppetlabs",
+      "username": "puppetlabs",
+      "gravatar_id": "fdd009b7c1ec96e088b389f773e87aec"
+    }
+  },
+  "version": "99.99.99",
+  "metadata": {
+    "name": "puppetlabs-nginx",
+    "version": "99.99.99",
+    "source": "http://github.com/puppetlabs/puppetlabs-nginx",
+    "author": "puppetlabs",
+    "license": "Apache License Version 2.0",
+    "summary": "Puppet NGINX management module",
+    "description": "This module can be used for basic NGINX Management",
+    "project_page": "http://github.com/puppetlabs/puppetlabs-nginx",
+    "dependencies": [
+      {
+        "name": "puppetlabs/stdlib",
+        "version_requirement": ">= 0.1.6"
+      }
+    ],
+    "types": [
+
+    ],
+    "checksums": {
+      "ChangeLog": "92cb1e2fac43c0e6f733ee8a8384bd2f",
+      "LICENSE": "86a0725dcd00b87b9929258039db566c",
+      "Modulefile": "a53ce3a1ce43efb4715d0cf3fefc8099",
+      "README": "d41d8cd98f00b204e9800998ecf8427e",
+      "README.markdown": "ace6eae1ba085fcd36819fcfc340782f",
+      "manifests/config.pp": "4adcfa0dcf159f289773e056d47e5ba2",
+      "manifests/init.pp": "933e0d0a68e702c3625af26d4c40d5d0",
+      "manifests/package/debian.pp": "e64807f6b6f28545bebec75d73e9714d",
+      "manifests/package/redhat.pp": "70a70aec1b652b90a5f3cc64adbb809e",
+      "manifests/package/suse.pp": "79082f365f817b3e708ef058af360e32",
+      "manifests/package.pp": "93262701c8815d0f6c1df007f2171a39",
+      "manifests/params.pp": "d49d3d548acd4d7ecaaacaa6ff9d966a",
+      "manifests/resource/location.pp": "c4298ab56d455f6a8f7ef73ce4d0728c",
+      "manifests/resource/upstream.pp": "21f63a855573e79b6384b637ab753b3c",
+      "manifests/resource/vhost.pp": "6f535b2e46b353dd124c9010b05148fc",
+      "manifests/service.pp": "0b9dc6851195b454382a6d0c5a90603e",
+      "templates/conf.d/nginx.conf.erb": "15c2344995a56945a437b79abc161ad2",
+      "templates/conf.d/proxy.conf.erb": "15287f6cabdecf173cff6cd72e535d81",
+      "templates/conf.d/upstream.erb": "65e541f63df1d566c2f3628282c7f29e",
+      "templates/vhost/vhost_footer.erb": "dad515035220165ad0f460ce7ec2e29a",
+      "templates/vhost/vhost_header.erb": "028c74276f634c5c23e1b933b1132bcb",
+      "templates/vhost/vhost_location_alias.erb": "86749cb78ba503522e90d6db88a0b8c5",
+      "templates/vhost/vhost_location_directory.erb": "2cd577a9b5edf05f469d0bc7ca2b8807",
+      "templates/vhost/vhost_location_proxy.erb": "988729b42f82b452bedff0fd66a0066c",
+      "templates/vhost/vhost_location_stub_status.erb": "98f38c02a314179217be883319fbed41",
+      "templates/vhost/vhost_ssl_header.erb": "19fc7ca77406e36301d044f19ab1b3ce",
+      "tests/init.pp": "65966654dd24c431365d66239b8bc8c8",
+      "tests/location_alias.pp": "c0b6f6b2f8a655cbc90faf735b05bde0",
+      "tests/upstream.pp": "c64fcbcb7b449d412b49cfb10a1297b6",
+      "tests/vhost.pp": "5a8a115f85f50a462f08882a4e028405",
+      "tests/vhost_ssl.erb": "06d4999eec451008c0a956f41088e642"
+    }
+  },
+  "tags": [
+    "web",
+    "virtualhost",
+    "proxy",
+    "webserver",
+    "nginx",
+    "https",
+    "vhost",
+    "http"
+  ],
+  "supported": false,
+  "validation_score": 38,
+  "file_uri": "/v3/files/puppetlabs-nginx-99.99.99.tar.gz",
+  "file_size": 10254,
+  "file_md5": "636f071faa000b4db456df14135c2907",
+  "downloads": 16059,
+  "readme": "#WARNING \n\nThis module is now unsupported by Puppetlabs.  It is replaced by the upstream\nversion at http://forge.puppetlabs.com/jfryman/nginx which is a much improved\nversion of this module.  It's had many new featured and abilities merged in and\nis a true superset of this module.  Please adjust your Modulefile's and other\nresources to use it instead.\n\nYou can add jfryman's version as a git upstream remote by doing:\n\n$ git remote add jfryman https://github.com/jfryman/puppet-nginx.git\n$ git fetch jfryman\n\nYou can view a list of release tags at:\n\nhttps://github.com/jfryman/puppet-nginx/releases\n\nYou can then merge his into yours:\n\n$ git merge jfryman v0.0.5\n",
+  "changelog": "2011-06-06  James Fryman <james@frymanet.com>\n\n  * Modulefile, README, files/README.markdown, lib/facter/README.markdown,\n  lib/puppet/parser/functions/README.markdown,\n  lib/puppet/provider/README.markdown, lib/puppet/type/README.markdown,\n  manifests/README.markdown, templates/README.markdown, tests/upstream.pp,\n  tests/vhost.pp, tests/vhost_ssl.erb: Updated Documentation\n\n  * ChangeLog: Updated Changelog\n\n  * lib/facter/ipv6.rb, manifests/config.pp, manifests/init.pp,\n  manifests/package.pp, manifests/package/suse.pp, manifests/params.pp,\n  manifests/resource/location.pp, manifests/resource/upstream.pp,\n  manifests/resource/vhost.pp, manifests/service.pp, manifests/vhost.pp,\n  templates/conf.d/nginx.conf.erb, templates/conf.d/proxy.conf.erb,\n  templates/conf.d/upstream.erb, templates/nginx.conf.erb, templates/vhost.erb,\n  templates/vhost/vhost_footer.erb, templates/vhost/vhost_header.erb,\n  templates/vhost/vhost_location_directory.erb,\n  templates/vhost/vhost_location_proxy.erb,\n  templates/vhost/vhost_ssl_header.erb: Added SuSE Support\n\n  * README, manifests/init.pp, manifests/package.pp,\n  manifests/package/debian.pp, manifests/package/redhat.pp, manifests/vhost.pp,\n  templates/vhost.erb: Updated Package Layout\n\n  * lib/facter/ipv6.rb: Added IPV6 Fact Check for Linux distros\n\n2011-06-02  James Fryman <james@frymanet.com>\n\n  * .gitignore, ChangeLog, Modulefile,\n  files/centos/etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL, manifests/config.pp,\n  manifests/init.pp, manifests/install.pp, manifests/package.pp,\n  manifests/params.pp, manifests/service.pp, manifests/vhost.pp, metadata.json,\n  templates/nginx.conf.erb, templates/vhost.erb, templates/vhost.pp: Added\n  vhost support\n\n2011-05-24  James Fryman <james@frymanet.com>\n\n  * LICENSE, Modulefile, README, files/README.markdown,\n  files/centos/etc/pki/rpm-gpg/RPM-GPG-KEY-EPEL, lib/facter/README.markdown,\n  lib/puppet/parser/functions/README.markdown,\n  lib/puppet/provider/README.markdown, lib/puppet/type/README.markdown,\n  manifests/README.markdown, manifests/config.pp, manifests/init.pp,\n  manifests/install.pp, manifests/params.pp, manifests/service.pp,\n  manifests/vhost.pp, metadata.json, spec/README.markdown, spec/spec.opts,\n  spec/spec_helper.rb, spec/unit/puppet/provider/README.markdown,\n  spec/unit/puppet/type/README.markdown, templates/README.markdown,\n  templates/nginx.conf.erb, templates/vhost.pp, tests/init.pp, tests/vhost.pp:\n  20110524 Work Snapshot\n\n2011-05-23  James Fryman <james@frymanet.com>\n\n  * : Initial Repository Initilization\n",
+  "license": "Licensed under the Apache License, Version 2.0 (the \"License\");\nyou may not use this file except in compliance with the License.\nYou may obtain a copy of the License at\n\n    http://www.apache.org/licenses/LICENSE-2.0\n\nUnless required by applicable law or agreed to in writing, software\ndistributed under the License is distributed on an \"AS IS\" BASIS,\nWITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\nSee the License for the specific language governing permissions and\nlimitations under the License.",
+  "created_at": "2014-05-01 11:38:17 -0700",
+  "updated_at": "2015-02-04 19:49:00 -0800",
+  "deleted_at": null,
+  "deleted_for": null
+}
