@@ -1,1 +1,5 @@
-curl -u jainishs:AKCp2Vp5EbY9fg8GAK1MpqS5vv5dyZpNbryQDRAN4bhfMM7LRdBo2cBPchwp4qyQgy1XXrokG -O  https://jfrogtraining.jfrog.io/jfrogtraining/tomcat-local/artifactory.war.zip
+curl -X POST --header 'Content-Type: application/json' --header 'Accept: application/json' --header 'Token: comTKEBCjkhhi+jZF7wQCz10+z4qHeLoOLWKvIGS1WI+AtIz5eq6TNNjSRnrCGhFR/2f3qSVX4AexEP3/UvKs9mwYHfk/aMTHFL8lDd6O1iGA7+WGxtoEGJ9ORt23FM7ecKCCpTL5e7zjIy288yS4l7rjT5/OwXXH3KpfazNMfjoxFBMjX9MKkZLT9/hvOO9Zlp5JdweUjNzj8QBPE1E+Q==' -d '{
+  "Policy": {
+    "Name": "Database_Daily"
+  }
+}' 'https://sc1.netapp.local:8146/api/2.0/resourcegroups/db1_netapp_local_MySQL_artdb/backup'
